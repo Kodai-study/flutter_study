@@ -30,6 +30,23 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  void showEnemyHand() {
+    List<String> hands = ["グー", "チョキ", "パー"];
+    //ランダムに並び替えた後、最初の要素を取得
+    hands.shuffle();
+    String enemyHand = hands.first;
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text("相手の手"),
+          content: Text("「$enemyHand」を出しました"),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +54,13 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Center(),
+      body: Center(
+        child: ElevatedButton(
+            onPressed: () {
+              showEnemyHand();
+            },
+            child: const Text("じゃんけんをします")),
+      ),
     );
   }
 }
