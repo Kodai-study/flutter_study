@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  MyHomePage({super.key, required this.title});
 
   final String title;
 
@@ -30,11 +30,42 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start;
+  CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.start;
 
-  void _incrementCounter() {
+  exchangeMainAxisAlignment() {
     setState(() {
-      _counter++;
+      switch (mainAxisAlignment) {
+        case MainAxisAlignment.start:
+          mainAxisAlignment = MainAxisAlignment.center;
+          break;
+        case MainAxisAlignment.center:
+          mainAxisAlignment = MainAxisAlignment.end;
+          break;
+        case MainAxisAlignment.end:
+          mainAxisAlignment = MainAxisAlignment.start;
+          break;
+        default:
+          mainAxisAlignment = MainAxisAlignment.start;
+      }
+    });
+  }
+
+  exchangeCrossAxisAlignment() {
+    setState(() {
+      switch (crossAxisAlignment) {
+        case CrossAxisAlignment.start:
+          crossAxisAlignment = CrossAxisAlignment.center;
+          break;
+        case CrossAxisAlignment.center:
+          crossAxisAlignment = CrossAxisAlignment.end;
+          break;
+        case CrossAxisAlignment.end:
+          crossAxisAlignment = CrossAxisAlignment.start;
+          break;
+        default:
+          crossAxisAlignment = CrossAxisAlignment.start;
+      }
     });
   }
 
@@ -45,25 +76,44 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+      body: Stack(
+        children: [
+          Column(
+            mainAxisAlignment: mainAxisAlignment,
+            crossAxisAlignment: crossAxisAlignment,
+            children: [
+              Container(
+                color: Colors.red,
+                width: 200,
+                height: 200,
+              ),
+              Container(
+                color: Colors.blue,
+                width: 150,
+                height: 150,
+              ),
+              Container(
+                color: Colors.green,
+                width: 100,
+                height: 100,
+              ),
+            ],
+          ),
+          Align(
+            alignment: Alignment.topRight,
+            child: Column(
+              children: [
+                OutlinedButton(
+                    onPressed: exchangeMainAxisAlignment,
+                    child: Text(mainAxisAlignment.toString())),
+                OutlinedButton(
+                    onPressed: exchangeCrossAxisAlignment,
+                    child: Text(crossAxisAlignment.toString())),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+          )
+        ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
