@@ -15,13 +15,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({super.key, required this.title});
+  const MyHomePage({super.key, required this.title});
 
   final String title;
 
@@ -109,6 +109,54 @@ class _MyHomePageState extends State<MyHomePage> {
                 OutlinedButton(
                     onPressed: exchangeCrossAxisAlignment,
                     child: Text(crossAxisAlignment.toString())),
+                SizedBox(
+                  width: 200,
+                  height: 500,
+                  child: ListView(
+                    children: [
+                      ListTile(
+                        leading: const Icon(Icons.access_time),
+                        title: const Text("リストビューの要素(ListTile)1つ目"),
+                        trailing: const Icon(Icons.arrow_forward_ios),
+                        onTap: () {},
+                      ),
+                      ListTile(
+                        leading: const Icon(Icons.account_tree),
+                        title: const Text("リストビューの要素(ListTile)2つ目"),
+                        trailing: const Icon(Icons.arrow_back),
+                        onTap: () {},
+                      ),
+                      Container(
+                        color: Colors.pink,
+                        height: 200,
+                        child: const Text(
+                          "リストビューの要素(Container)1つ目",
+                          style: TextStyle(fontSize: 30),
+                        ),
+                      ),
+                      Container(
+                        color: Colors.red,
+                        height: 200,
+                      ),
+                      Container(
+                        color: Colors.blue,
+                        height: 200,
+                      ),
+                      Container(
+                        color: Colors.purple,
+                        height: 200,
+                      ),
+                      Container(
+                        color: Colors.black,
+                        height: 200,
+                      ),
+                      Container(
+                        color: Colors.greenAccent,
+                        height: 200,
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
           ),
@@ -138,7 +186,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );
