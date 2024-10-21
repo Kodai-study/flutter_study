@@ -36,12 +36,18 @@ class _MyHomePageState extends State<MyHomePage> {
     hands.shuffle();
     String enemyHand = hands.first;
 
+    Map<String, String> handImageMap = {
+      "グー": "assets/janken_gu.png",
+      "チョキ": "assets/janken_choki.png",
+      "パー": "assets/janken_pa.png"
+    };
+
     showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
           title: const Text("相手の手"),
-          content: Text("「$enemyHand」を出しました"),
+          content: Image.asset(handImageMap[enemyHand]!),
         );
       },
     );
