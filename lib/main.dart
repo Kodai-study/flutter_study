@@ -111,6 +111,33 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Text(crossAxisAlignment.toString())),
               ],
             ),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    color: Colors.yellow,
+                    width: 100,
+                    height: 50,
+                  ),
+                  Container(
+                    color: Colors.purple,
+                    width: 400,
+                    height: 50,
+                    child: const Text(
+                        "SingleChildScrollView、scrollDirection: Axis.horizontalで横にスクロールします"),
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    width: 100,
+                    height: 50,
+                  ),
+                ],
+              ),
+            ),
           )
         ],
       ),
