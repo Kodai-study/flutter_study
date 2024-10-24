@@ -37,8 +37,17 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: const Center(
-        child: Column(),
+      body: Center(
+        child: Column(
+          children: [
+            ElevatedButton(onPressed: () {}, child: const Text('WebViewの表示')),
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: ElevatedButton(
+                  onPressed: () {}, child: const Text('APIテスト画面に遷移')),
+            ),
+          ],
+        ),
       ),
     );
   }
