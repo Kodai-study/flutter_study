@@ -1,3 +1,4 @@
+import 'package:first_flutter/screen_test_api.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -61,7 +62,14 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: const EdgeInsets.only(top: 20),
               child: ElevatedButton(
-                  onPressed: () {}, child: const Text('APIテスト画面に遷移')),
+                  onPressed: () {
+                    //画面遷移
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const TestApiScreen()));
+                  },
+                  child: const Text('APIテスト画面に遷移')),
             ),
           ],
         ),
