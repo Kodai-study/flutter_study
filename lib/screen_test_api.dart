@@ -32,12 +32,39 @@ class _TestApiScreenState extends State<TestApiScreen> {
               shrinkWrap: true,
               itemCount: bookData.length,
               itemBuilder: (context, index) {
-                return Text(bookData[index],style: TextStyle(fontSize: 30),);
+                return Text(
+                  bookData[index],
+                  style: TextStyle(fontSize: 30),
+                );
               },
             ),
           ),
         ],
       ),
     );
+  }
+
+  Future<void> searchBooks(String query) async {
+    setState(() {
+      stateMessage = '検索中...';
+      bookData.clear();
+    });
+
+    final response = await http
+        .get(Uri.parse('https://www.googleapis.com/books/v1/volumes?q=$query'));
+
+    if (response.statusCode != 200) {
+      setState(() {
+        stateMessage = 'エラーが発生しました。';
+        stateMessage = 'エラーが発生しました。';
+      });
+      return;
+    }
+
+    final data = json.decode(response.body)["items"] as List<dynamic>;
+
+    setState(() {
+      bookData = data.map((e) => e.toString()).toList();
+    });
   }
 }
