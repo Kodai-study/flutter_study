@@ -16,6 +16,9 @@ class _TestApiScreenState extends State<TestApiScreen> {
   String stateMessage = '';
   List<dynamic> bookData = [];
 
+  final _queryTextFieldController = TextEditingController();
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,8 +28,13 @@ class _TestApiScreenState extends State<TestApiScreen> {
       ),
       body: Column(
         children: [
-          TextField(),
-          ElevatedButton(onPressed: () {}, child: Text("data")),
+          TextField(controller: _queryTextFieldController),
+          ElevatedButton(
+              onPressed: () {
+                var query = _queryTextFieldController.text;
+                searchBooks(query);
+              },
+              child: Text("data")),
           Expanded(
             child: ListView.builder(
               shrinkWrap: true,
@@ -58,7 +66,6 @@ class _TestApiScreenState extends State<TestApiScreen> {
 
     if (response.statusCode != 200) {
       setState(() {
-        stateMessage = 'エラーが発生しました。';
         stateMessage = 'エラーが発生しました。';
       });
       return;
