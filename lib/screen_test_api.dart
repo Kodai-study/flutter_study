@@ -14,7 +14,7 @@ class TestApiScreen extends StatefulWidget {
 
 class _TestApiScreenState extends State<TestApiScreen> {
   String stateMessage = '';
-  List<String> bookData = [];
+  List<dynamic> bookData = [];
 
   @override
   Widget build(BuildContext context) {
@@ -32,9 +32,12 @@ class _TestApiScreenState extends State<TestApiScreen> {
               shrinkWrap: true,
               itemCount: bookData.length,
               itemBuilder: (context, index) {
-                return Text(
-                  bookData[index],
-                  style: TextStyle(fontSize: 30),
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    bookData[index]["volumeInfo"]["title"],
+                    style: TextStyle(fontSize: 30),
+                  ),
                 );
               },
             ),
@@ -61,10 +64,8 @@ class _TestApiScreenState extends State<TestApiScreen> {
       return;
     }
 
-    final data = json.decode(response.body)["items"] as List<dynamic>;
-
     setState(() {
-      bookData = data.map((e) => e.toString()).toList();
+      bookData = json.decode(response.body)["items"];
     });
   }
 }
