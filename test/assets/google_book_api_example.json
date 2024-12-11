@@ -1,0 +1,74 @@
+{
+  "kind": "books#volume",
+  "id": "buldsHl1ijwC",
+  "etag": "l846ZRM6qCU",
+  "selfLink": "https://www.googleapis.com/books/v1/volumes/buldsHl1ijwC",
+  "volumeInfo": {
+    "title": "book title",
+    "authors": [
+      "author1",
+      "author2"
+    ],
+    "publisher": "秀和システム",
+    "publishedDate": "2012-10",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "4798034940"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9784798034942"
+      }
+    ],
+    "readingModes": {
+      "text": false,
+      "image": true
+    },
+    "pageCount": 252,
+    "printType": "BOOK",
+    "categories": [
+      "Reference"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.9.7.0.preview.1",
+    "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+    },
+    "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=buldsHl1ijwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=buldsHl1ijwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "ja",
+    "previewLink": "http://books.google.co.jp/books?id=buldsHl1ijwC&pg=PA63&dq=hoge&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.co.jp/books?id=buldsHl1ijwC&dq=hoge&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Hadoop%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89.html?hl=&id=buldsHl1ijwC"
+  },
+  "saleInfo": {
+    "country": "JP",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+  },
+  "accessInfo": {
+    "country": "JP",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+      "isAvailable": false
+    },
+    "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.co.jp/books/download/Hadoop%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89-sample-pdf.acsm?id=buldsHl1ijwC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=buldsHl1ijwC&hl=&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+  },
+  "searchInfo": {
+    "textSnippet": "佐々木達也. Shuffle <b>hoge</b> &lt;タブ&gt; 1 <b>hoge</b> &lt;タブ&gt; 1 Mapper <b>hoge</b> &lt;タブ&gt; 1 fuga &lt;タブ&gt; 1 <b>hoge</b> &lt;タブ&gt; 1 <b>hoge</b> &lt;タブ&gt; 1 <b>hoge</b> &lt;タブ&gt; 1 <b>hoge</b> &lt;タブ&gt; 1 Reducer <b>hoge</b> &lt;タブ&gt; 1 <b>hoge</b> &lt;タブ&gt; 1 key が <b>hoge</b> の出力は必ずここに集まる <b>hoge</b> &lt;タブ&gt; 1 <b>hoge</b>&nbsp;..."
+  }
+}
