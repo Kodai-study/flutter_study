@@ -1,7 +1,9 @@
 import 'dart:convert';
 
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
+
+import 'api_book_searcher.dart';
 
 class TestApiScreen extends StatefulWidget {
   const TestApiScreen({super.key});
@@ -17,7 +19,6 @@ class _TestApiScreenState extends State<TestApiScreen> {
   List<dynamic> bookData = [];
 
   final _queryTextFieldController = TextEditingController();
-
 
   @override
   Widget build(BuildContext context) {
@@ -36,19 +37,21 @@ class _TestApiScreenState extends State<TestApiScreen> {
               },
               child: Text("data")),
           Expanded(
-            child: ListView.builder(
-              shrinkWrap: true,
-              itemCount: bookData.length,
-              itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    bookData[index]["volumeInfo"]["title"],
-                    style: TextStyle(fontSize: 30),
+            child: stateMessage.isNotEmpty
+                ? Text(stateMessage)
+                : ListView.builder(
+                    shrinkWrap: true,
+                    itemCount: bookData.length,
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          bookData[index],
+                          style: TextStyle(fontSize: 30),
+                        ),
+                      );
+                    },
                   ),
-                );
-              },
-            ),
           ),
         ],
       ),
@@ -61,18 +64,20 @@ class _TestApiScreenState extends State<TestApiScreen> {
       bookData.clear();
     });
 
-    final response = await http
-        .get(Uri.parse('https://www.googleapis.com/books/v1/volumes?q=$query'));
-
-    if (response.statusCode != 200) {
+    BookApiClient bookApiClient = BookApiClient(Dio());
+    try {
+      final bookSearchResult = await bookApiClient.getBookDataFromApi(query);
+      setState(() {
+        bookData = bookSearchResult.items
+            .map((bookData) => bookData.volumeInfo?.title)
+            .toList();
+        stateMessage = '';
+      });
+    } catch (e) {
       setState(() {
         stateMessage = 'エラーが発生しました。';
       });
       return;
     }
-
-    setState(() {
-      bookData = json.decode(response.body)["items"];
-    });
   }
 }
