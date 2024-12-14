@@ -1,94 +1,81 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:dio/dio.dart';
 import 'package:first_flutter/api_book_searcher.dart';
+import 'package:first_flutter/model/book_data.dart';
+import 'package:first_flutter/model/book_search_data.dart';
+import 'package:first_flutter/model/book_search_response.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http_mock_adapter/http_mock_adapter.dart';
 import 'package:mockito/annotations.dart';
-import 'package:mockito/mockito.dart';
-import 'package:http/http.dart' as http;
 
-import 'api_book_searcher_test.mocks.dart';
 
 @GenerateNiceMocks([MockSpec<BookApiManager>()])
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
 
+  late Dio dio;
+  late DioAdapter dioAdapter;
+  late BookApiClient bookApiClient;
+
+  setUp(() {
+    dio = Dio();
+    dioAdapter = DioAdapter(dio: dio);
+    bookApiClient = BookApiClient(dio);
+  });
+
   group('APIのレスポンステスト', () {
-    final mockBookManager = MockBookApiManager();
-
-    test('正常系テスト', () async {
-      final List<Map<String, dynamic>> bookData = [
-        await createBookData({'volumeInfo.title': 'title1'}),
-        await createBookData({'volumeInfo.title': 'title2'}),
-        await createBookData({'volumeInfo.title': 'title3'}),
-      ];
-      when(mockBookManager.getBookDataFromApi('success')).thenAnswer((_) async {
-        final body = createApiResponse(bookData);
-
-        return http.Response(utf8.decode(utf8.encode(body)), 200, headers: {
-          HttpHeaders.contentTypeHeader: 'application/json; charset=utf-8',
-        });
-      });
-
-      final body = await mockBookManager.getBookDataFromApi('success');
-      expect(BookApiManager().getBookTitles(body.body),
-          ['title1', 'title2', 'title3']);
+    test("実際のAPIレスポンスを使った正常系テスト", () {
+      dioAdapter.onGet(
+          '/volumes',
+          (server) =>
+              server.reply(200, fixture('google_book_api_example_all.json')),
+          queryParameters: {'q': 'success'});
     });
 
-    test('titleが抜けたデータだった時のテスト', () async {
-      final List<Map<String, dynamic>> bookData = [
-        await createBookData({'volumeInfo.title': 'title1'}),
-        await createBookData({'volumeInfo.title': 'title2'}),
-        await createBookData({'volumeInfo.title': null}),
-      ];
-      final mockBookManager = MockBookApiManager();
-      when(mockBookManager.getBookDataFromApi('no_title')).thenAnswer((_) async {
-        final body = createApiResponse(bookData);
+    test("テストデータを正しく作成できる事のテスト", () async {
+      dioAdapter.onGet(
+          '/volumes',
+          (server) => server.reply(
+              200,
+              BookSearchResponse(totalItems: 100, items: [
+                BookSearchData(
+                    volumeInfo: BookData(title: "title1", publisher: "出版社1")),
+                BookSearchData(
+                    volumeInfo: BookData(title: "title2", publisher: "出版社2"))
+              ]).toJson()),
+          queryParameters: {'q': 'success'});
 
-        return http.Response(utf8.decode(utf8.encode(body)), 200, headers: {
-          HttpHeaders.contentTypeHeader: 'application/json; charset=utf-8',
-        });
-      });
-      final body = await mockBookManager.getBookDataFromApi('no_title');
-      expect(BookApiManager().getBookTitles(body.body),
-          ['title1', 'title2', null]);
+      final response = await bookApiClient.getBookDataFromApi("success");
+      expect(response.totalItems, 100);
+      expect(response.items[0].volumeInfo?.title, "title1");
+      expect(response.items[0].volumeInfo?.publisher, "出版社1");
+      expect(response.items[1].volumeInfo?.title, "title2");
+      expect(response.items[1].volumeInfo?.publisher, "出版社2");
+    });
+
+    test("ステータスコード400が帰ってきたときのエラー", () async {
+      dioAdapter.onGet('/volumes', (server) => server.reply(400, 'error'),
+          queryParameters: {'q': 'error'});
+      expect(bookApiClient.getBookDataFromApi("error"),
+          throwsA(isA<DioException>()));
+    });
+
+    test("検索結果が0の場合に正しく処理されることのテスト", () async {
+      dioAdapter.onGet(
+          '/volumes',
+          (server) => server.reply(
+              200, jsonDecode('{"kind": "books#volumes", "totalItems": 0}')),
+          queryParameters: {'q': 'no_result'});
+
+      final response = await bookApiClient.getBookDataFromApi("no_result");
+      expect(response.totalItems, 0);
+      expect(response.items.length, 0);
     });
   });
 }
 
-String createApiResponse(List<Map<String, dynamic>> items) {
-  return json.encode(
-      {'kind': 'books#volumes', 'totalItems': 1121, 'items': items.toList()});
-}
-
-Future<Map<String, dynamic>> createBookData(
-    Map<String, dynamic> changes) async {
-  final jsonData = jsonDecode(
-      await File('test/assets/google_book_api_example.json').readAsString());
-
-  for (var path in changes.keys) {
-    dynamic currentLevel = jsonData;
-    List<String> keys = path.split('.');
-    for (int i = 0; i < keys.length; i++) {
-      String key = keys[i];
-
-      // 最終キーの場合
-      if (i == keys.length - 1) {
-        // valueがnullならキーごと削除
-        if (changes[path] == null) {
-          (currentLevel as Map).remove(key);
-        } else {
-          currentLevel[key] = changes[path];
-        }
-      } else {
-        // キーが存在しないかMapでない場合は空のMapを作成
-        if (currentLevel[key] == null ||
-            currentLevel[key] is! Map<String, dynamic>) {
-          currentLevel[key] = <String, dynamic>{};
-        }
-        currentLevel = currentLevel[key];
-      }
-    }
-  }
-  return jsonData;
+String fixture(String name) {
+  return File('test/stub/$name').readAsStringSync();
 }
