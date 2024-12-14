@@ -1,0 +1,795 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1035,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "aXSmDwAAQBAJ",
+      "etag": "rWcskeFTGNw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/aXSmDwAAQBAJ",
+      "volumeInfo": {
+        "title": "NEW ACTION LEGEND 数学I＋A（本編）",
+        "authors": [
+          "東京書籍編集部",
+          "ニューアクション編集委員会"
+        ],
+        "publisher": "東京書籍",
+        "publishedDate": "2016-02-01",
+        "description": "※この商品はタブレットなど大きいディスプレイを備えた端末で読むことに適しています。また、文字だけを拡大することや、文字列のハイライト、検索、辞書の参照、引用などの機能が使用できません。 ※本書には「練習」「問題」「チャレンジ」「Let's Try」「PERFECT MASTER」の詳細解答は含まれていません。 「NEW ACTION LEGEND 数学I＋A（解答編）」を合わせてご購入ください。 高校数学の系統性を重視し、思考力を磨く、他に類を見ない充実の参考書！ 【特長1】 全例題に、図解による「思考のプロセス」を掲載 「条件の言い換え」「既知の問題に帰着」「具体的に考える」などのキーワードで、数学的思考法を“見える化”しました。 試行錯誤の過程を図解で示したり、既習の例題と対比させたりしていて、“どうしてその解法を思いついたのか”がよく分かります。 【特長2】巻末「思考の戦略編」で、分野を越えた効果的な思考法を特集 思考力を高めるとともに、入試への対応力をさらに一歩引き上げます。 (例)「逆向きに考える」「対称性」「動かす・固定する」など 【特徴3】入試の重要テーマを整理した「特講」で、軽重つけた学習が可能 教科書では扱いが薄いが入試に頻出の内容をまとめています。 点と点であった個々の例題が線でつながって、思考を整理できます。 【特徴4】知識だけでなく、数学的思考法を鍛える「コラム」が充実 新入試を意識して、「解法の比較」「解法や性質の様々な見方」「定理の別証明」「性質の一般化」に関する題材を扱いました。 【特徴5】例題の問題文をまとめた「例題一覧」で、解答を見ずに挑戦 問題の検索性が高く、問題集としての活用もしやすい構成です。",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PKEY:BT000058345900100101900209"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 642,
+        "printType": "BOOK",
+        "categories": [
+          "Reference"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=aXSmDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=aXSmDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=aXSmDwAAQBAJ&pg=PA28&dq=a&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=aXSmDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=aXSmDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 1426,
+          "currencyCode": "JPY"
+        },
+        "retailPrice": {
+          "amount": 1283,
+          "currencyCode": "JPY"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=aXSmDwAAQBAJ&rdid=book-aXSmDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 1426000000,
+              "currencyCode": "JPY"
+            },
+            "retailPrice": {
+              "amountInMicros": 1283000000,
+              "currencyCode": "JPY"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/NEW_ACTION_LEGEND_%E6%95%B0%E5%AD%A6I%EF%BC%8BA_%E6%9C%AC%E7%B7%A8-sample-epub.acsm?id=aXSmDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/NEW_ACTION_LEGEND_%E6%95%B0%E5%AD%A6I%EF%BC%8BA_%E6%9C%AC%E7%B7%A8-sample-pdf.acsm?id=aXSmDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=aXSmDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>a</b> - 2b - 2 ( 3 ) x3 + ( <b>a</b> + 2 ) x2 + ( 2a + 1 ) x + <b>a</b> 思考のプロセス 1 つの文字に着目( 1 ) (ア) α に着目( 2 次式) ( 2b ) a2 — ( 3b — 1 ) <b>a</b> — 2b – 2 = ( 2b ) a2 — ( 3b −1 ) <b>a</b> − 2 ( b + 1 ) =「たすき掛け」をしなければならない。次数が&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "wfnkEAAAQBAJ",
+      "etag": "T0HtOG4UTOQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/wfnkEAAAQBAJ",
+      "volumeInfo": {
+        "title": "国連英検過去問題集Ａ級　2021/2022年度実施",
+        "authors": [
+          "公益財団法人日本国際連合協会"
+        ],
+        "publisher": "三修社",
+        "publishedDate": "2023-08-31",
+        "description": "総合的な国際コミュニケーションスキルを問う国連英検（正式名称：国際連合公用語英語検定試験）の過去問題集最新版。2021年度（第1回・第2回）、2022年度（第1回・第2回）に実施された試験の出題内容と解答・解説を完全収録。また、全問題の詳細な解説を掲載。Ａ級では英字新聞等の記事、小説や劇の一場面などを短時間に理解する、あるテーマについて論理的にまとまった内容を英文で表現する、外国人と日常の身近な出来事、時事問題などに関して討論する能力が要求されます。 Ａ級（一次試験）にはリスニングテストはありません。",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9784384060744"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "4384060742"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 227,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.0.0.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=wfnkEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=wfnkEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=wfnkEAAAQBAJ&pg=PA215&dq=a&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.co.jp/books?id=wfnkEAAAQBAJ&dq=a&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/%E5%9B%BD%E9%80%A3%E8%8B%B1%E6%A4%9C%E9%81%8E%E5%8E%BB%E5%95%8F%E9%A1%8C%E9%9B%86%EF%BC%A1%E7%B4%9A_2021_2.html?hl=&id=wfnkEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/%E5%9B%BD%E9%80%A3%E8%8B%B1%E6%A4%9C%E9%81%8E%E5%8E%BB%E5%95%8F%E9%A1%8C%E9%9B%86%EF%BC%A1%E7%B4%9A_2021_2-sample-pdf.acsm?id=wfnkEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=wfnkEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>A</b> 16. <b>A</b> 17. D 18. C 19. C 20. B III 21. B 22. C 23. D 24. C 25. D 26. <b>A</b> 27. B 28. C 29. C 30. <b>A</b> IV 31. C 32. D 33. B 34. D 35. <b>A</b> 36. C 37. C 38. <b>A</b> 39. B 40. D V 41. C 42. D 43. <b>A</b> 44.B 45. B 46. <b>A</b> 47. B 48&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "GBoXqb-lNjYC",
+      "etag": "+QNwX076cFg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GBoXqb-lNjYC",
+      "volumeInfo": {
+        "title": "国連英検特A級・A級対策",
+        "authors": [
+          "武藤克彦"
+        ],
+        "publisher": "三修社",
+        "publishedDate": "2011-04-30",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9784384056563"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "4384056567"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 321,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Collections"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.2.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GBoXqb-lNjYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GBoXqb-lNjYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=GBoXqb-lNjYC&pg=PA210&dq=a&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.co.jp/books?id=GBoXqb-lNjYC&dq=a&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/%E5%9B%BD%E9%80%A3%E8%8B%B1%E6%A4%9C%E7%89%B9A%E7%B4%9A_A%E7%B4%9A%E5%AF%BE%E7%AD%96.html?hl=&id=GBoXqb-lNjYC"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/%E5%9B%BD%E9%80%A3%E8%8B%B1%E6%A4%9C%E7%89%B9A%E7%B4%9A_A%E7%B4%9A%E5%AF%BE%E7%AD%96-sample-pdf.acsm?id=GBoXqb-lNjYC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=GBoXqb-lNjYC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>a</b> cluttered hillside neighborhood favored by rural migrants , where <b>a</b> dozen clinics compete in the ultrasound and abortion business . &quot; Almost everyone wants to know the gender of their child , ” Wang said , interrupting his hotpot pork&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QUhvDwAAQBAJ",
+      "etag": "jtpET/pE390",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QUhvDwAAQBAJ",
+      "volumeInfo": {
+        "title": "A Gentle Introduction to Functional Programming in English [Second Edition]",
+        "authors": [
+          "Antoine Bossard（アントワーヌ・ボサール）"
+        ],
+        "publisher": "株式会社 オーム社",
+        "publishedDate": "2018-10-01",
+        "description": "《本書には改訂版があります》 英語とHaskellで学ぶ関数プログラミンの入門書（日本名：関数プログラミング入門，in English！［第2版］） 本書は、Haskellを用いて関数プログラミングの入門的な内容を英語で解説した書籍です。多くのプログラミング言語はもともと英語が母体であり、プログラミング自体を英語で学習することは、日本をはじめ特に非欧米語圏の人々にとって、きわめて重要かつ有用です。 なお本書では、日本の学生の英語での学習を支援するために、本文中の重要キーワードについては、適宜、日本語の訳や解説を加えています。本書を読み進めれば，英文の読解力と情報関係の専門用語の知識を自然に得ることができ，今後，英語論文や英文原書を読みこなすための確かな力が身につきます． 【このような方におすすめ】 ・プログラミングを学ぶ学生、若手技術者 ・プログラミングや情報科学についての英文原書にチャレンジしようとする方々 Preface（序文） Chapter 1 About Functional Programming（関数プログラミングについて） 1.1 Preamble（はじめに） 1.2 Four main programming paradigms（主なプログラミングパラダイム） 1.3 Recent quotes（最近の引用） 1.4 What is it, functional programming?（関数プログラミングとは何か） 1.4.1 What is a mathematical function?（数学の関数とは何か） 1.4.2 Functions in computer science（計算機科学での関数） 1.4.3 Function vs. procedure（関数対手続き） 1.4.4 What about functional programming?（関数プログラミングとの関係） 1.4.5 The real world（現実の世界） 1.4.6 A word on performance（実行性能について） 1.5 About Haskell（Haskellについて） 1.6 Application examples（応用例） Chapter 2 Haskell Syntax and Evaluation Model（Haskell文法と評価モデル） 2.1 The GHCi environment（GHCi環境） 2.2 Arithmetic expressions（演算式） 2.3 Expression evaluation（式の評価） Chapter 3 Variables（変数） 3.1 About variables（変数について） 3.2 Variables in Haskell（Haskellでの変数） 3.3 Data types（データ型） 3.3.1 Typing（型付け） 3.3.2 Haskell basic data types（Haskell基本データ型） 3.3.3 Booleans, characters and strings（ブーリアン、文字、文字列） 3.3.4 Variables and types（変数と型） 3.3.5 Type conversion（型変換） 3.4 Scope（スコープ） 3.4.1 Global bindings（大域束縛） 3.4.2 Local bindings（局所束縛） 3.4.3 ame conflicts（名前の衝突） Chapter 4 Functions in Haskell（Haskellで関数） 4.1 Basic definition（基本定義） 4.2 Currying（カリー化） 4.3 Signatures（プロトタイプ） 4.4 Generic data types（総称型） 4.5 Contracts（契約） 4.6 Functions and the where clause（関数とwhere節） Chapter 5 Lists and Tuples（リストとタプル） 5.1 Lists in Haskell（Haskellでリスト） 5.1.1 List accessors（リストのアクセス関数） 5.1.2 In signatures（リストとプロトタイプ） 5.2 Tuples（タプル） 5.2.1 Tuple accessors（タプルのアクセス関数） 5.2.2 In signatures（タプルとプロトタイプ） 5.3 Infinite lists（無限リスト） 5.3.1 Two-dot notation（ツードット形式） 5.3.2 Manipulating infinite lists（無限リストの活用） 5.4 Laziness（遅延評価） 5.5 List comprehension（リストの内包表記） Chapter 6 Control Structures（制御構造） 6.1 Binary relations and Boolean algebra（二項関係とブール代数） 6.2 Control structures in Haskell（Haskellの制御構造） 6.2.1 Predicates（述語） 6.2.2 The if-then-else structure（if-then-else構造） 6.2.3 Guards（ガード） 6.2.4 An important remark（注意点） Chapter 7 Recursion（再帰） 7.1 Preamble（はじめに） 7.2 About recursion（再帰について） 7.2.1 Formal definition（正式な定義） 7.2.2 A famous example（有名な例） 7.2.3 Summarising（まとめ） 7.3 Recursion in Haskell（Haskellで再帰） 7.4 Recursion on lists（リストに対する再帰） 7.4.1 Recall（確認） 7.4.2 List recursion（再帰的リスト処理） 7.5 Tail recursion（末尾再帰） 7.6 Warning: base case（注意事項） Chapter 8 Pattern Matching（パターンマッチ） 8.1 Introducing pattern matching（パターンマッチについて） 8.1.1 Matching literals（リテラルのマッチ） 8.1.2 Matching tuples and lists（タプルとリストのマッチ） 8.1.3 List dissection（リスト解剖） 8.1.4 emarks（注意点） 8.2 Pattern matching and recursion（パターンマッチと再帰） 8.2.1 First steps（はじめに） 8.2.2 With lists（リストの場合） 8.2.3 About list processing（リストの処理について） Chapter 9 Selected Applications（応用例） 9.1 Sorting（整列） 9.2 Abstract data types（抽象データ型） 9.2.1 Type synonyms（型の同義語） 9.2.2 Stack（スタック） 9.2.3 Queue（キュー） 9.3 Procedural graphics（手続的グラフィックス） 9.3.1 The Koch snowflake（コッホ曲線） 9.3.2 Bezier curves（ベジエ曲線） 9.3.3 3D graphics（三次元グラフィックス） 9.4 About this function h…（関数hについて） Chapter 10 Towards Logical Programming（論理プログラミングに向けて） 10.1 About logical programming（論理プログラミングについて） 10.1.1 Preamble（はじめに） 10.1.2 Propositional logic（命題論理） 10.1.3 First-order logic（一階述語論理） 10.1.4 In practice（実際のところ） 10.2 Facts, rules and queries（事実、規則と質問） 10.3 Recursion with logical programming（論理プログラミングによる再帰） 10.3.1 Recursive rules（再帰的規則） 10.3.2 Recursive programming（再帰的プログラミング） 10.4 Lists with logical programming（論理プログラミングによるリスト） 10.5 Prolog: arithmetic, cuts and negation（Prolog: 演算、カットと否定） 10.5.1 Arithmetic with system predicates（組込述語による演算） 10.5.2 Cuts（カット） 10.5.3 egation（否定） Chapter 11 Concluding Remarks（最後に） The Prelude - A Short Reference（The Prelude関数一覧（短縮）） Exercise Solutions（演習課題の解答例） Bibliography（参考文献） Index（索引）",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9784274803673"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "4274803678"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 176,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.1.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QUhvDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QUhvDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=QUhvDwAAQBAJ&pg=PA81&dq=a&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.co.jp/books?id=QUhvDwAAQBAJ&dq=a&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/A_Gentle_Introduction_to_Functional_Prog.html?hl=&id=QUhvDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/A_Gentle_Introduction_to_Functional_Prog-sample-pdf.acsm?id=QUhvDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QUhvDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... [ <b>a</b> ] - &gt; <b>a</b> back [ ] = back 1 error &quot; No back element in an empty queue . = last 1 &quot; Here , it is important to note that since the given queue implementation is based on the list data structure , the enqueue operation has <b>a</b> linear time&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "AgZdEAAAQBAJ",
+      "etag": "0beF53AR56g",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/AgZdEAAAQBAJ",
+      "volumeInfo": {
+        "title": "改訂版 高校の数学Ⅰ・Aが1冊でしっかりわかる本",
+        "authors": [
+          "小杉拓也"
+        ],
+        "publisher": "かんき出版",
+        "publishedDate": "2022-02-09",
+        "description": "※この商品はタブレットなど大きいディスプレイを備えた端末で読むことに適しています。また、文字だけを拡大することや、文字列のハイライト、検索、辞書の参照、引用などの機能が使用できません。 高校の数学I・Aの全範囲を、この1冊で総復習! 35万部突破の『小学校6年間の算数が1冊でしっかりわかる本』、25万部突破の『中学校3年間の数学が1冊でしっかりわかる本』に続く、高校の数学Ⅰ・A版です。 改訂版は、2022年度からの新学習指導要領に合わせてリニューアル。新要領では「データの分析(数学I)」の単元に「外れ値」という新たな用語が加わりました。さらに旧要領では数学Bの範囲だった「期待値」が、数学Aの範囲になりました。本書では、これらの新たな範囲もしっかり解説しています。 なお、旧学習指導要領にも対応しているので、どちらの指導要領で勉強している人でも使えます。 ●定期試験や大学受験のための基礎を固めて、成績を上げたい高校生へ。 ミスを減らす方法や、学校では教えてもらえない解き方のコツが満載。知っているだけでまわりの人と差がつきます。 ●医療看護系入試、高卒認定試験などの対策で、短期間で数学I・Aを理解したい方へ。 最少の時間で最大限に理解できるように、高校の数学I・Aの大切なことだけを凝縮しました。数Iと数A、両方の範囲を1冊で網羅できるのも特徴です。 ●学び直しや頭の体操をしたい大人の方へ。 読む人が理解しやすいように、とにかくていねいに解説しているので、学び直しをしたい大人の方にも最適。数学特有の用語も、巻末の「意味つき索引」ですぐに調べられるので安心です。 本書の7つの強み その1 各項目に「コレで完璧! ポイント」を掲載! その2 「ここが大切!」に各項目の要点をギュッとひとまとめ! その3 高校の数学I・Aの内容が短時間で「しっかり」わかる! その4 「学ぶ順序」と「ていねいな解説」へのこだわり! その5 用語の理解を深めるために、巻末に「意味つき索引」も! その6 範囲とレベルは高校の教科書と同じ! 新学習指導要領にも対応! その7 高校1年生から大人まで一生使える1冊!",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PKEY:BT000108451400100101900209"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 194,
+        "printType": "BOOK",
+        "categories": [
+          "Reference"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AgZdEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AgZdEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=AgZdEAAAQBAJ&pg=PA41&dq=a&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=AgZdEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=AgZdEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 1320,
+          "currencyCode": "JPY"
+        },
+        "retailPrice": {
+          "amount": 1188,
+          "currencyCode": "JPY"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=AgZdEAAAQBAJ&rdid=book-AgZdEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 1320000000,
+              "currencyCode": "JPY"
+            },
+            "retailPrice": {
+              "amountInMicros": 1188000000,
+              "currencyCode": "JPY"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/%E6%94%B9%E8%A8%82%E7%89%88_%E9%AB%98%E6%A0%A1%E3%81%AE%E6%95%B0%E5%AD%A6%E2%85%A0_A%E3%81%8C1%E5%86%8A%E3%81%A7-sample-epub.acsm?id=AgZdEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/%E6%94%B9%E8%A8%82%E7%89%88_%E9%AB%98%E6%A0%A1%E3%81%AE%E6%95%B0%E5%AD%A6%E2%85%A0_A%E3%81%8C1%E5%86%8A%E3%81%A7-sample-pdf.acsm?id=AgZdEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=AgZdEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>A</b> のどの要素も B の要素になっているとき、つまり、「 xEA ならば xEB 」が成り立つとき、 <b>A</b> は B の部分集合であるといい、 ACB または BOA と表します。このとき、 <b>A</b> は B に含まれる、または、 B は <b>A</b> を含むと PART 2 しゅうごうめいだい集合と命題また&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "AvpEEAAAQBAJ",
+      "etag": "6AxIwdHVKeI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/AvpEEAAAQBAJ",
+      "volumeInfo": {
+        "title": "2021-2022 A/W gap PRESS vol.161 TOKYO",
+        "authors": [
+          "gap編集部"
+        ],
+        "publisher": "TOブックス",
+        "publishedDate": "2021-06-01",
+        "description": "※この商品はタブレットなど大きいディスプレイを備えた端末で読むことに適しています。また、文字だけを拡大することや、文字列のハイライト、検索、辞書の参照、引用などの機能が使用できません。 最新のトップトレンドを世界に発信するコレクションマガジン！ モードの最前線を知る手がかりとして、ファッションのエキスパート必須の一冊。 【内容】 世界のトップブランドのファッション情報を発信するコレクションマガジン。気鋭の新進デザイナーから伝統ある老舗メゾンまで、いま話題のブランドが発表する最新のクリエーションを鮮明なビジュアルでご紹介します！",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PKEY:BT000101774500100101900209"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 147,
+        "printType": "BOOK",
+        "categories": [
+          "Health & Fitness"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.2.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AvpEEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AvpEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=AvpEEAAAQBAJ&pg=PA13&dq=a&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=AvpEEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=AvpEEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 1595,
+          "currencyCode": "JPY"
+        },
+        "retailPrice": {
+          "amount": 1436,
+          "currencyCode": "JPY"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=AvpEEAAAQBAJ&rdid=book-AvpEEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 1595000000,
+              "currencyCode": "JPY"
+            },
+            "retailPrice": {
+              "amountInMicros": 1436000000,
+              "currencyCode": "JPY"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/2021_2022_A_W_gap_PRESS_vol_161_TOKYO-sample-epub.acsm?id=AvpEEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/2021_2022_A_W_gap_PRESS_vol_161_TOKYO-sample-pdf.acsm?id=AvpEEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=AvpEEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>a</b> brand should be is for it to remain <b>a</b> brand supported by young people who have <b>a</b> high level of interest in fashion . I don&#39;t want JLS to become <b>a</b> brand that gets older with design , and along with its fans . That&#39;s something that I&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yvmppYJHn-0C",
+      "etag": "zCvCmpiGsRo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/yvmppYJHn-0C",
+      "volumeInfo": {
+        "title": "lo nenri be lo spati denmi to'i sa'a fi'o kansa lo banjupunu",
+        "publisher": "gusni kantu",
+        "description": "lo xe fanva be lo cfika bei la lojban bei lo ponbau be'o joi lo se fanva fa'o Lojban translation of a Japanese story with the original text (bilingual version). The original story Yabu no naka was written by Ryunosuke Akutagawa and published in 1922. The story was adapted for the film Rashomon by Akira Kurosawa in 1950.",
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 47,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.4.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=yvmppYJHn-0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=yvmppYJHn-0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=yvmppYJHn-0C&pg=PT5&dq=a&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=yvmppYJHn-0C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=yvmppYJHn-0C"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 0,
+          "currencyCode": "JPY"
+        },
+        "retailPrice": {
+          "amount": 0,
+          "currencyCode": "JPY"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=yvmppYJHn-0C&rdid=book-yvmppYJHn-0C&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=yvmppYJHn-0C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "ji lo xrani moklu pe&#39;<b>a</b> ji&#39;<b>a</b> ca&#39;<b>a</b> sudga za&#39;<b>a</b> かわ傷口も乾いて居ったようでございます。.i ji&#39;<b>a</b> ba&#39;<b>a</b> nai bu&#39;u ri lo xirma sfani noi pa mei gi&#39;e pe&#39;<b>a</b> na tirna lo mi cadzu sance ji&#39;<b>a</b> ku&#39;o tai&#39;i .betar . ca&#39;o snipa je batci うまぼえおまけに&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ii00RfsVg2IC",
+      "etag": "WnGMtsFLKu0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ii00RfsVg2IC",
+      "volumeInfo": {
+        "title": "SUDOKU puzzles to give your brain a workout",
+        "publisher": "Sterling Publishers Pvt. Ltd",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1845576497"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781845576493"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 100,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.6.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ii00RfsVg2IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ii00RfsVg2IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=ii00RfsVg2IC&pg=PA4&dq=a&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.co.jp/books?id=ii00RfsVg2IC&dq=a&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/SUDOKU_puzzles_to_give_your_brain_a_work.html?hl=&id=ii00RfsVg2IC"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/SUDOKU_puzzles_to_give_your_brain_a_work-sample-pdf.acsm?id=ii00RfsVg2IC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ii00RfsVg2IC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>a</b> disadvantage . The puzzles in the newspaper are usually too small to accommodate more than <b>a</b> few digits . When using this method , solvers often make <b>a</b> larger copy of the puzzle or use <b>a</b> sharp or mechanical pencil . The second method&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "TsCyDwAAQBAJ",
+      "etag": "aLATtHtU24A",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/TsCyDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Mr. Kief　ー A Boy’s Story in War and Peace ー",
+        "authors": [
+          "Keiko Kimura"
+        ],
+        "publisher": "アスパラ",
+        "publishedDate": "2019-06-07",
+        "description": "”This book is the English translation of a book published in Japanese in 2006 by Kindaibungei-sha. While many people read the Japanese version, when the publisher ran out of stock, it was decided that a second edition would not be printed. ……Recently, Aspara Books selected this book to be published digitally. Timed with this new release, I am happy to publish an English language translation of the book.……This book offers a perspective of war and peace through the eyes of one Japanese youth. Mr. Kief, for whom the book is titled, was the Enemy just a few short months before he warmly befriends this young Japanese boy. ……For readers of this book, I hope this story can be a tool for people promoting peace. With the English translation, it is my wish that this story will spread in the same way that the song mentioned in it is sung around the world today. ”（From \"For the English Edition\"） I wrote this book, but it was my husband, Rihito Kimura, who recounted the stories. He is also the co-author of this book. Through the experiences of this young boy, I hope to convey the importance of Peace.（From \"PREFACE\") 「誰もが知る『幸せなら手をたたこう』の歌詞を戦後14年フィリピンでの学生ワークキャンプで作った青年。戦争防止と平和運動の種を世界に撒き散らした半生を伴侶の夫人が語る珠玉の作品です。」故・日野原重明さん(元聖路加国際病院理事長)が、2006年に出版された初版の帯に書かれた文章です。 この「キーフさん」が、新たな装いで蘇りました。その英語版です。 【目次】 PROLOGUE CHAPTER I: PATRIOTIC BOY The War Begins Chokugo（The Imperial Rescript) Imada Kaerazaru ¬– Not Yet Returned Goshinei – Imperial Portrait Gyokusai – An Honorable Death Gakudou Sokai – Student Evacuation Empty Stomachs Air Raids Atomic Bomb The Defeat CHAPTER II: BASKETBALL SHOES Going Home Blackening-Out Textbooks The Story of the New Constitution Mr. Kief Jeep Anone PX CHAPTER III: THE SCAR If You’re Happy Clap Your Hands Search Mission Lubang Island Mr. Onoda In Saigon An Unexpected Greeting or“Hi, Stupid!” CHAPTER IV: NEVER ENDING WAR Unit Preparing for Biological Warfare Maruta – Wooden Logs Demanding Apology Atomic Bomb Exhibition Opposition Movement An Alternative Atomic Bomb Exhibition CHAPTER V: REUNION Hot Looking for Mr. Kief Reunion EPILOGUE Pilot The Anniversary of Victory Day Patriotism Peace Were “the Enemies” Really My Enemy?",
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 77,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Collections"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.2.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=TsCyDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=TsCyDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=TsCyDwAAQBAJ&pg=PT11&dq=a&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.co.jp/books?id=TsCyDwAAQBAJ&dq=a&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Mr_Kief_%E3%83%BC_A_Boy_s_Story_in_War_and_Pea.html?hl=&id=TsCyDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/Mr_Kief_%E3%83%BC_A_Boy_s_Story_in_War_and_Pea-sample-epub.acsm?id=TsCyDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/Mr_Kief_%E3%83%BC_A_Boy_s_Story_in_War_and_Pea-sample-pdf.acsm?id=TsCyDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=TsCyDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>a</b> black sofa. He told me to have <b>a</b> seat and when I sat down it was so soft that I almost fell to the floor. “Kore wa Anone,” Mr. Kief said in broken Japanese again. I was waiting for him to go on after “anone,” which means, “let&#39;s&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "-U_kEAAAQBAJ",
+      "etag": "h+CRZfpJsmw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/-U_kEAAAQBAJ",
+      "volumeInfo": {
+        "title": "A Dog of Flanders　フランダースの犬",
+        "authors": [
+          "ウィーダ"
+        ],
+        "publisher": "ＩＢＣパブリッシング",
+        "publishedDate": "2005-07-01",
+        "description": "両親を亡くした少年ネロは、アントワープ郊外に住む祖父のジェハンに引き取られた。ふたりの生活には、やがて犬のパトラッシュが加わる。牛乳運びの仕事をしながら、貧しくも幸せに暮らすネロとジェハン、そしてパトラッシュ。巨匠ルーペンスにあこがれ、ネロは画家を志す。しかし貧しさゆえに、行く手にはさまざまな困難が待ち受けていた。ベルギーのフランダース地方を舞台にした詩情あふれる児童文学の名作。 ※書籍版にある巻末のワードリストは電子版には付属しません。",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PKEY:BT000011949200100101900209"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 38,
+        "printType": "BOOK",
+        "categories": [
+          "Foreign Language Study"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=-U_kEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=-U_kEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "ja",
+        "previewLink": "http://books.google.co.jp/books?id=-U_kEAAAQBAJ&pg=PT7&dq=a&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=-U_kEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=-U_kEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "JP",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 616,
+          "currencyCode": "JPY"
+        },
+        "retailPrice": {
+          "amount": 554,
+          "currencyCode": "JPY"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=-U_kEAAAQBAJ&rdid=book--U_kEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 616000000,
+              "currencyCode": "JPY"
+            },
+            "retailPrice": {
+              "amountInMicros": 554000000,
+              "currencyCode": "JPY"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "JP",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/A_Dog_of_Flanders_%E3%83%95%E3%83%A9%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9%E3%81%AE-sample-epub.acsm?id=-U_kEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.jp/books/download/A_Dog_of_Flanders_%E3%83%95%E3%83%A9%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9%E3%81%AE-sample-pdf.acsm?id=-U_kEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=-U_kEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... <b>a</b> short name for Nicolas , grew strong with him , and the old man and the little child lived in the poor house happily . The little house was made of earth , but it was clean and very white . There was <b>a</b> small garden where they grew <b>a</b>&nbsp;..."
+      }
+    }
+  ]
+}
