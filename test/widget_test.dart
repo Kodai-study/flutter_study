@@ -11,7 +11,6 @@ import 'package:first_flutter/screen_test_api.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:first_flutter/main.dart';
 import 'package:http_mock_adapter/http_mock_adapter.dart';
 
 import 'api_book_searcher_test.dart';
@@ -33,14 +32,28 @@ void main() {
       ));
 
       dioAdapter.onGet("/volumes",
-          (server) => server.reply(200, createSuccessResponse(100).toJson()),
-          queryParameters: {'q': 'success'});
+          (server) => server.reply(200, createSuccessResponse(1).toJson()),
+          queryParameters: {'q': 'item_1'});
+      dioAdapter.onGet("/volumes",
+              (server) => server.reply(200, createSuccessResponse(2).toJson()),
+          queryParameters: {'q': 'item_2'});
 
       final queryTextField = find.byType(TextField);
-      await tester.enterText(queryTextField, "success");
-      await tester.tap(find.text("data"));
+      final searchButton = find.text("data");
+
+      //検索結果が1件の場合、1件表示されること
+      await tester.enterText(queryTextField, "item_1");
+      await tester.tap(searchButton);
       await tester.pumpAndSettle();
 
+      expect(find.text('title0'), findsOneWidget);
+      //1件のみ表示されること
+      expect(find.text('title1'), findsNothing);
+
+      //検索結果が2件の場合、2件表示されること
+      await tester.enterText(queryTextField, "item_2");
+      await tester.tap(searchButton);
+      await tester.pumpAndSettle();
       expect(find.text('title0'), findsOneWidget);
       expect(find.text('title1'), findsOneWidget);
     });
