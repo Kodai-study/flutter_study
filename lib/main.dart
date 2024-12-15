@@ -1,3 +1,5 @@
+import 'package:dio/dio.dart';
+import 'package:first_flutter/api_book_searcher.dart';
 import 'package:first_flutter/screen_test_api.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -67,7 +69,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const TestApiScreen()));
+                            builder: (context) =>
+                                TestApiScreen(BookApiClient(Dio()))));
                   },
                   child: const Text('APIテスト画面に遷移')),
             ),

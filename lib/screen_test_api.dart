@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 import 'api_book_searcher.dart';
 
 class TestApiScreen extends StatefulWidget {
-  const TestApiScreen({super.key});
+  final BookApiClient bookApiClient;
+
+  const TestApiScreen(this.bookApiClient, {super.key});
 
   final String title = 'Flutter デモ API呼び出し画面';
 
@@ -64,9 +66,9 @@ class _TestApiScreenState extends State<TestApiScreen> {
       bookData.clear();
     });
 
-    BookApiClient bookApiClient = BookApiClient(Dio());
     try {
-      final bookSearchResult = await bookApiClient.getBookDataFromApi(query);
+      final bookSearchResult =
+          await widget.bookApiClient.getBookDataFromApi(query);
       setState(() {
         bookData = bookSearchResult.items
             .map((bookData) => bookData.volumeInfo?.title)
