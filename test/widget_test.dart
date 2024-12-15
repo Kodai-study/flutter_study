@@ -44,5 +44,24 @@ void main() {
       expect(find.text('title0'), findsOneWidget);
       expect(find.text('title1'), findsOneWidget);
     });
+
+
+    testWidgets('検索エラー発生時に、「検索エラー」が表示されるテスト', (WidgetTester tester) async {
+      await tester.pumpWidget(MaterialApp(
+        home: TestApiScreen(bookApiClient),
+      ));
+      dioAdapter.onGet(
+          "/volumes",
+          (server) =>
+              server.reply(400, fixture('google_book_api_missing_query.json')),
+          queryParameters: {'q': 'badRequest'});
+
+      final queryTextField = find.byType(TextField);
+      await tester.enterText(queryTextField, "badRequest");
+      await tester.tap(find.text("data"));
+      await tester.pumpAndSettle();
+
+      expect(find.text('エラーが発生しました。'), findsOneWidget);
+    });
   });
 }
