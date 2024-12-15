@@ -5,26 +5,44 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:dio/dio.dart';
+import 'package:first_flutter/api_book_searcher.dart';
+import 'package:first_flutter/screen_test_api.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:first_flutter/main.dart';
+import 'package:http_mock_adapter/http_mock_adapter.dart';
+
+import 'api_book_searcher_test.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  group("テキストボックスに入れて検索", () {
+    late Dio dio;
+    late DioAdapter dioAdapter;
+    late BookApiClient bookApiClient;
+    setUp(() {
+      dio = Dio();
+      dioAdapter = DioAdapter(dio: dio);
+      bookApiClient = BookApiClient(dio);
+    });
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    testWidgets('検索結果が正しく表示されること', (WidgetTester tester) async {
+      await tester.pumpWidget(MaterialApp(
+        home: TestApiScreen(bookApiClient),
+      ));
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+      dioAdapter.onGet("/volumes",
+          (server) => server.reply(200, createSuccessResponse(100).toJson()),
+          queryParameters: {'q': 'success'});
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+      final queryTextField = find.byType(TextField);
+      await tester.enterText(queryTextField, "success");
+      await tester.tap(find.text("data"));
+      await tester.pumpAndSettle();
+
+      expect(find.text('title0'), findsOneWidget);
+      expect(find.text('title1'), findsOneWidget);
+    });
   });
 }
