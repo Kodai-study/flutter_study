@@ -1,26 +1,21 @@
-import 'dart:convert';
 
 import 'package:first_flutter/model/book_search_response.dart';
-import 'package:http/http.dart' as http;
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'api_book_searcher.g.dart';
 
 class BookApiManager {
-  static const String baseUrl = 'https://www.googleapis.com/books/v1/volumes';
+  final BookApiClient bookApiClient;
 
-  Future<http.Response> getBookDataFromApi(String query) async {
-    final response = await http.get(Uri.parse('$baseUrl?q=$query'));
+  BookApiManager(this.bookApiClient);
 
-    return response;
-  }
+  Future<List<String?>> getBoolTitles(String query) async {
+    final bookSearchResult = await bookApiClient.getBookDataFromApi(query);
 
-  List<dynamic> getBookTitles(String bookDataBody) {
-    final bookData = json.decode(bookDataBody);
-
-    return bookData["items"]
-        .map((book) => book['volumeInfo']['title'])
+    return bookSearchResult.items
+        .where((bookData) => bookData.volumeInfo?.title != "noName")
+        .map((bookData) => bookData.volumeInfo?.title)
         .toList();
   }
 }
