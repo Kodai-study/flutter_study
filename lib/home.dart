@@ -4,10 +4,16 @@ import 'package:first_flutter/screen_test_api.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+abstract class WebViewBase extends StatefulWidget {
+  const WebViewBase({super.key, required this.initialUrl});
 
-  final String title;
+  final String initialUrl;
+}
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.webViewWidget});
+
+  final WebViewBase webViewWidget;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -21,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text('Flutter デモ メイン画面'),
       ),
       body: Center(
         child: Column(
@@ -32,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: 300,
                 height: 300,
                 padding: const EdgeInsets.only(top: 20, bottom: 20),
-                child: const TestWebView(),
+                child: widget.webViewWidget,
               ),
             ElevatedButton(
                 onPressed: () {
@@ -61,8 +67,8 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class TestWebView extends StatefulWidget {
-  const TestWebView({super.key});
+class TestWebView extends WebViewBase {
+  const TestWebView({super.key, required super.initialUrl});
 
   @override
   State<TestWebView> createState() => _TestWebViewState();
@@ -71,13 +77,9 @@ class TestWebView extends StatefulWidget {
 class _TestWebViewState extends State<TestWebView> {
   late WebViewController controller = WebViewController();
 
-  void setWebView(String url) {
-    controller.loadRequest(Uri.parse(url));
-  }
-
   @override
   Widget build(BuildContext context) {
-    controller.loadRequest(Uri.parse('https://www.google.com'));
+    controller.loadRequest(Uri.parse(widget.initialUrl));
     return WebViewWidget(controller: controller);
   }
 }

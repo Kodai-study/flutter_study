@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter デモ メイン画面'),
+      home: const MyHomePage(
+        webViewWidget: TestWebView(initialUrl: "https://google.com"),
+      ),
     );
   }
 }
