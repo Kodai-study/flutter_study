@@ -1,12 +1,8 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:dio/dio.dart';
 import 'package:first_flutter/api_book_searcher.dart';
+import 'package:first_flutter/model/book_data.dart';
+import 'package:first_flutter/model/book_search_data.dart';
+import 'package:first_flutter/model/book_search_response.dart';
 import 'package:first_flutter/screen_test_api.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -14,6 +10,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:http_mock_adapter/http_mock_adapter.dart';
 
 import 'api_book_searcher_test.dart';
+import 'lib/api_mock.dart';
 
 void main() {
   group("テキストボックスに入れて検索", () {
@@ -35,7 +32,7 @@ void main() {
           (server) => server.reply(200, createSuccessResponse(1).toJson()),
           queryParameters: {'q': 'item_1'});
       dioAdapter.onGet("/volumes",
-              (server) => server.reply(200, createSuccessResponse(2).toJson()),
+          (server) => server.reply(200, createSuccessResponse(2).toJson()),
           queryParameters: {'q': 'item_2'});
 
       final queryTextField = find.byType(TextField);
@@ -58,6 +55,35 @@ void main() {
       expect(find.text('title1'), findsOneWidget);
     });
 
+    testWidgets('検索しなおした時に、リストアイテムが更新されること', (WidgetTester tester) async {
+      await tester.pumpWidget(MaterialApp(
+        home: TestApiScreen(bookApiClient),
+      ));
+      setDefaultResponse(dioAdapter, 2);
+      dioAdapter.onGet(
+          "/volumes",
+          (server) => server.reply(
+              200,
+              BookSearchResponse(totalItems: 5, items: [
+                BookSearchData(volumeInfo: BookData(title: "changed_title0")),
+                BookSearchData(volumeInfo: BookData(title: "changed_title1"))
+              ])),
+          queryParameters: {'q': 'item_refresh'});
+
+      await tester.enterText(find.byType(TextField), "item_2");
+      await tester.tap(find.byType(ElevatedButton));
+      await tester.pumpAndSettle();
+      expect(find.text('title0'), findsOneWidget);
+      expect(find.text('title1'), findsOneWidget);
+
+      await tester.enterText(find.byType(TextField), "item_refresh");
+      await tester.tap(find.byType(ElevatedButton));
+      await tester.pumpAndSettle();
+      expect(find.text('title0'), findsNothing);
+      expect(find.text('title1'), findsNothing);
+      expect(find.text('changed_title0'), findsOneWidget);
+      expect(find.text('changed_title1'), findsOneWidget);
+    });
 
     testWidgets('検索エラー発生時に、「検索エラー」が表示されるテスト', (WidgetTester tester) async {
       await tester.pumpWidget(MaterialApp(
