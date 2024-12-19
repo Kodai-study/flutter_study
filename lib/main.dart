@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:first_flutter/api_book_searcher.dart';
 import 'package:first_flutter/screen_test_api.dart';
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter デモ API呼び出し画面'),
+      home: const MyHomePage(title: 'Flutter デモ メイン画面'),
     );
   }
 }
